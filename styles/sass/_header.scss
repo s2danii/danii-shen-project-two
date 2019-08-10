@@ -1,0 +1,52 @@
+// partial for header styling
+
+// HOME PAGE STARTS HERE
+
+@mixin header-image($header-image) {
+    
+    background: linear-gradient(rgba(12, 20, 35, 0.7), rgba(12, 20, 35, 0.7)), $header-image;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.header-home {
+    @include header-image(url(images/header-image.jpg));
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    padding: 30px;
+}
+ 
+nav a {
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    width: 30%;
+    padding-top: 100px;
+}
+
+.header-home .wrapper {
+    
+}
+
+.header-image {
+    position: absolute;
+    bottom: -35%;
+    right: 0;
+    width: 50%;
+}
+
+ul {
+    margin-top: 0;
+}
+

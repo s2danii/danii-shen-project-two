@@ -1,0 +1,63 @@
+// partial to set typography and general text styling
+
+html {
+    font-size: 62.5%;
+   
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 2rem;
+    color: $text-color;
+    
+}
+
+h1, h2, h3, h4, nav {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 13.8rem;
+    line-height: 126px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 8rem;
+    line-height: 92px;
+}
+
+h3 {
+    font-size: 4.2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+}
+
+ul {
+    padding: 0
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 75%;
+    margin: 0 auto; 
+}
+
+img {
+    width: 100%;
+}
