@@ -10,64 +10,69 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
+    <header class="contact-header">
         <div class="wrapper">
             <nav>
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">BLOG</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
-
     </header>
+    <main class="contact-main">
+        <div class="wrapper">
+            <div class="contact-message">
+                <h2>Get in touch</h2>
+                <form action="submit" method="POST" class="sub-form clearfix" name="sub-form">
+                    <label for="name" class="visuallyHidden">Name</label>
+                    <input type="text" name="name" placeholder="Name" id="name">
+            
+                    <label for="email-address" class="visuallyHidden">Email address</label>
+                    <input type="email" name="email-address" placeholder="Email address" id="email-address" required>
+            
+                    <label for="message" class="visuallyHidden">Message</label>
+                    <input type="text" name="comment" placeholder="Message" id="message">
+            
+                    <button class="sub-button">Submit</button>
+                </form>
+            </div>
+            
+            <aside class="contact-info">
+                <ul class="social-icons">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-snapchat-ghost"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""> <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+                <h4>info@email.com</h4>
+                <p>123-456-7890</p>
+                <p>123 Queen Street West, Unit 10</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V2D5</p>
+            </aside>
+
+        </div>
+        
+    </main>
     
-    <div class="contact-message">
-        <form action="submit" method="POST" class="sub-form clearfix" name="sub-form">
-            <label for="name" class="visuallyHidden">Name</label>
-            <input type="text" name="name" placeholder="Name" id="name">
-        
-            <label for="email-address" class="visuallyHidden">Email address</label>
-            <input type="email" name="email-address" placeholder="Email address" id="email-address" required>
-        
-            <label for="message" class="visuallyHidden">Message</label>
-            <input type="text" name="comment" placeholder="Message" id="message">
-        
-            <button class="sub-button">Submit</button>
-        </form>
-    </div>
-
-    <aside class="contact-info">
-        <ul class="social-icons">
-            <li>
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fab fa-snapchat-ghost"></i>
-                </a>
-            </li>
-            <li>
-                <a href=""> <i class="fab fa-twitter"></i>
-                </a>
-            </li>
-        </ul>
-        <h4>info@email.com</h4>
-        <p>123-456-7890</p>
-        <p>123 Queen Street West, Unit 10</p>
-        <p>Toronto, Ontario</p>
-        <p>M5V2D5</p>
-    </aside>
-
     <footer>
         <p>Copyright © 2019 HackerYou</p>
     </footer>

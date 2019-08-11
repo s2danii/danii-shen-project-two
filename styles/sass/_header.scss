@@ -52,3 +52,10 @@ ul {
     
 }
 
+// CONTACT PAGE HEADER STARTS HERE
+
+.contact-header {
+    @include header-image(url(images/contact-header.jpg));
+}
+
+    

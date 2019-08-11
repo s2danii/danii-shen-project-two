@@ -1,0 +1,48 @@
+
+.contact-main {
+    
+    background: $primary-blue;
+    .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        
+        .contact-message {
+            position: relative;
+            top: -35vh;
+            left: 40px;
+            z-index: 10;
+            form {
+                position: relative;
+            }
+        }
+        .contact-info {
+        width: 30%;
+        align-self: center;
+        
+            .social-icons {
+                display: flex;
+                i {
+                    margin-right: 20px;
+                }
+            }
+            h4 {
+                margin-bottom: 20px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.contact-message form::before {
+    content: '';
+        height: 100%;
+        width: 100%;
+        background: $accent;
+        position: absolute;
+        left: -40px;
+        bottom: -40px;
+        z-index: -1;
+}
+
