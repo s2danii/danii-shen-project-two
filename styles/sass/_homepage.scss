@@ -103,9 +103,10 @@
         display: flex;
         .box-photo {
             width: 25%;
+            height: 25%;
             box-shadow: $drop-shadow-right;
             img {
-                display: block;
+                display: block; 
             }
         }
         .monthly-info {
