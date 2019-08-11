@@ -189,9 +189,10 @@ body {
   color: #fff;
 }
 
-h1, h2, h3, h4, nav {
+h1, h2, h3, h4 {
   text-transform: uppercase;
   font-weight: 700;
+  margin: 0;
 }
 
 h1 {
@@ -207,7 +208,6 @@ h2 {
 
 h3 {
   font-size: 4.2rem;
-  text-align: center;
   letter-spacing: 1px;
 }
 
@@ -227,16 +227,25 @@ li {
 a {
   text-decoration: none;
   color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .wrapper {
   max-width: 1280px;
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 }
 
 img {
   width: 100%;
+  display: block;
+}
+
+p {
+  margin: 30px 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 32px;
 }
 
 .header-home {
@@ -273,11 +282,214 @@ h1 {
 
 .header-image {
   position: absolute;
-  bottom: -35%;
+  bottom: -200px;
   right: 0;
   width: 50%;
 }
 
 ul {
   margin-top: 0;
+}
+
+.header-blog {
+  background: url(images/blog-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.more-info {
+  background: #0c1423;
+  padding: 250px 5% 200px;
+  text-align: center;
+}
+
+.features {
+  background: #0f614e;
+}
+
+.features .feature-top, .features .feature-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.feature-bottom {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.photo-wrapper {
+  width: 40%;
+}
+
+.info-left, .info-right {
+  width: 40%;
+  padding-top: 70px;
+}
+
+.info-right {
+  padding-right: 10%;
+}
+
+.info-left {
+  padding-left: 10%;
+  text-align: right;
+}
+
+.photo-wrapper {
+  position: relative;
+}
+
+.photo-left {
+  position: absolute;
+  top: -40px;
+  -webkit-box-shadow: 40px 40px #86e0f9;
+          box-shadow: 40px 40px #86e0f9;
+}
+
+.photo-right {
+  position: absolute;
+  bottom: -100px;
+  -webkit-box-shadow: -40px 40px #86e0f9;
+          box-shadow: -40px 40px #86e0f9;
+}
+
+.links-section {
+  background: #0c1423;
+  padding: 150px 0 50px 0;
+}
+
+.links-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.links-section ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin: 30px 0;
+}
+
+.links-section ul li i {
+  border-radius: 50%;
+  background: #86e0f9;
+  color: #0c1423;
+  padding: 15px;
+  font-size: 3.2rem;
+  height: 65px;
+  width: 65px;
+  text-align: center;
+  margin: 0 30px;
+}
+
+.monthly-profile {
+  background: #0c1423;
+}
+
+.monthly-profile .wrapper {
+  padding: 120px 0 90px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.monthly-profile .wrapper .box-photo {
+  width: 25%;
+  -webkit-box-shadow: 40px 40px #86e0f9;
+          box-shadow: 40px 40px #86e0f9;
+}
+
+.monthly-profile .wrapper .box-photo img {
+  display: block;
+}
+
+.monthly-profile .wrapper .monthly-info {
+  width: 75%;
+  padding-left: 100px;
+}
+
+.gallery {
+  background: #0f614e;
+  padding: 90px 0;
+}
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery ul li:nth-child(2) {
+  margin: 0 40px;
+}
+
+.find-out-button {
+  background: #86e0f9;
+  color: #0c1423;
+  padding: 10px 30px;
+  line-height: 32px;
+}
+
+.read-more-button {
+  background: #0c1423;
+  padding: 10px 30px;
+  line-height: 32px;
+}
+
+.blog-body {
+  background: #0c1423;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-body article {
+  width: 60%;
+  position: relative;
+  top: -60vh;
+}
+
+.blog-body article .blog-image {
+  background: #86e0f9;
+  -webkit-box-shadow: -40px 40px #86e0f9;
+          box-shadow: -40px 40px #86e0f9;
+}
+
+.blog-body article .blog-text {
+  -webkit-box-shadow: -40px 40px #86e0f9;
+          box-shadow: -40px 40px #86e0f9;
+}
+
+.blog-body aside {
+  width: 30%;
+}
+
+footer {
+  background: #86e0f9;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+  color: #0c1423;
 }

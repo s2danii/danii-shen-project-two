@@ -1,0 +1,26 @@
+
+.blog-body {
+    background: $primary-blue;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+    article {
+        width: 60%;
+        position: relative;
+        top: -60vh;
+        .blog-image {
+            background: $accent;
+            box-shadow: $drop-shadow-left;
+        }
+        .blog-text {
+            box-shadow: $drop-shadow-left;
+        }
+        
+    }
+
+    aside {
+    width: 30%;
+    }
+}
+

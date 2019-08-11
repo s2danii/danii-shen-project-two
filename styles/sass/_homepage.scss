@@ -1,0 +1,127 @@
+// HOME PAGE BODY STYLING
+
+.more-info {
+    background: $primary-blue;
+    padding: 250px 5% 200px;
+    text-align: center;
+}
+
+.features {
+    background: $primary-green;
+        .feature-top, .feature-bottom {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 60px;
+            
+    }
+}
+
+
+.feature-bottom {
+    flex-direction: row-reverse;
+}
+
+
+.photo-wrapper {
+    width: 40%;
+    
+}
+
+.info-left, .info-right {
+    width: 40%;
+    padding-top: 70px;
+    
+}
+
+.info-right {
+    padding-right: 10%;
+    
+}
+
+.info-left {
+    padding-left: 10%;
+    text-align: right;
+}
+
+.photo-wrapper {
+    position: relative;
+}
+
+.photo-left {
+    position: absolute;
+    top: -40px;
+    box-shadow: $drop-shadow-right;  
+}
+
+// .photo-left::after {
+//     content: '';
+//     width: 95%;
+//     height: 95%;
+//     position: relative;
+//     background: $accent;
+// }
+
+.photo-right {
+    position: absolute;
+    bottom: -100px;
+    box-shadow: $drop-shadow-left;   
+}
+
+// LINKS SECTION STARTS HERE
+
+.links-section {
+    background: $primary-blue;
+    padding: 150px 0 50px 0;
+    ul {
+    display: flex;
+    flex-wrap: wrap;
+        li {
+        display: flex;
+        width: 50%;
+        margin: 30px 0;
+            i {
+                border-radius: 50%;
+                background: $accent;
+                color: $primary-blue;
+                padding: 15px;
+                font-size: 3.2rem;
+                height: 65px;
+                width: 65px;
+                text-align: center;
+                margin: 0 30px;
+        
+            }
+            
+        }
+    }
+}
+
+.monthly-profile {
+    background: $primary-blue;
+    .wrapper {
+        padding: 120px 0 90px 0;
+        display: flex;
+        .box-photo {
+            width: 25%;
+            box-shadow: $drop-shadow-right;
+            img {
+                display: block;
+            }
+        }
+        .monthly-info {
+            width: 75%;
+            padding-left: 100px;
+        }
+    }
+}
+
+.gallery {
+    background: $primary-green;
+    padding: 90px 0;
+    ul {
+        display: flex;
+        li:nth-child(2) {
+            margin: 0 40px;
+        }
+    }
+}

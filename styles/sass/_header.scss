@@ -3,8 +3,7 @@
 // HOME PAGE STARTS HERE
 
 @mixin header-image($header-image) {
-    
-    background: linear-gradient(rgba(12, 20, 35, 0.7), rgba(12, 20, 35, 0.7)), $header-image;
+    background: $header-image;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -12,7 +11,7 @@
 
 
 .header-home {
-    @include header-image(url(images/header-image.jpg));
+    @include header-image((linear-gradient(rgba(12, 20, 35, 0.7), rgba(12, 20, 35, 0.7)), url(images/header-image.jpg)));
     position: relative;
 }
 
@@ -35,18 +34,21 @@ h1 {
     padding-top: 100px;
 }
 
-.header-home .wrapper {
-    
-}
-
 .header-image {
     position: absolute;
-    bottom: -35%;
+    bottom: -200px;
     right: 0;
     width: 50%;
 }
 
 ul {
     margin-top: 0;
+}
+
+// BLOG HEADER STARTS HERE
+
+.header-blog {
+    @include header-image(url(images/blog-header.jpg));
+    
 }
 

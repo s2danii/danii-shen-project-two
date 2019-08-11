@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <script src="https://kit.fontawesome.com/cda4a106cc.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700|Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -16,8 +16,8 @@
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
             <h1>UNDER THE SEA</h1>
@@ -30,7 +30,7 @@
     <main>
         <section class="more-info">
             <div class="wrapper">
-                <h2>What is under the sea?</h2>
+                <h3>What is under the sea?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum nobis deleniti necessitatibus
                     voluptas recusandae architecto nesciunt similique? Hic reprehenderit illum voluptatibus! Fugit atque laborum
                     inventore natus animi! Veniam, a!</p>
@@ -38,29 +38,38 @@
             </div>
         </section>
         <section class="features">
-            <div class="wrapper">
-                <div class="photo-left">
-                    <img src="styles/images/left-image.jpg" alt="girl looking at aquarium">
+            <div class="feature-top">
+                <div class="photo-wrapper">
+                    <div class="photo-left">
+                        <img src="styles/images/left-image.jpg" alt="girl looking at aquarium">
+                    </div>
                 </div>
-                <div class="right-info">
-                    <h3>New Additions</h3>
+                
+                <div class="info-right">
+                    <h4>New Additions</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod placeat magnam molestiae nihil fuga ea
                         earum quia
                         in sapiente veniam suscipit ratione exercitationem ex, nostrum id quibusdam voluptate cumque maiores.
                     </p>
-                    <a href="#" class="read-more-button">Find out more</a>
+                    <a href="#" class="read-more-button">Read more</a>
                 </div>
-                <div class="photo-right">
-                    <img src="styles/images/right-image.jpg" alt="clownfish swimming">
+                
+            </div>
+            <div class="feature-bottom">
+                <div class="photo-wrapper">
+                    <div class="photo-right">
+                        <img src="styles/images/right-image.jpg" alt="clownfish swimming">
+                    </div>
                 </div>
+                
                 <div class="info-left">
-                    <h3>Meet real Nemo</h3>
+                    <h4>Meet real Nemo</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non obcaecati maiores ratione eius! A totam
                         asperiores
                         culpa iure praesentium dolore reprehenderit suscipit, facilis atque, repudiandae ipsam autem. Itaque,
                         illo
                         consequatur.</p>
-                    <a href="#" class="read-more-button">Find out more</a>
+                    <a href="#" class="read-more-button">Read more</a>
                 </div>
             </div>
         
@@ -69,37 +78,61 @@
             <div class="wrapper">
                 <ul>
                     <li>
-                        <h3>Locations</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit animi omnis esse, sed fugit
-                            magnam
-                            labore, quae expedita tempora nemo veritatis fugiat eaque. Aliquam aspernatur distinctio suscipit
-                            voluptatem
-                            amet sit.</p>
+                        <div>
+                            <i class="fas fa-location-arrow"></i>
+                        </div>
+                        
+                        <div class="links-info">
+                            <h4>Locations</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit animi omnis esse, sed fugit
+                                magnam
+                                labore, quae expedita tempora nemo veritatis fugiat eaque. Aliquam aspernatur distinctio suscipit
+                                voluptatem
+                                amet sit.</p>
+                        </div>
+                        
                     </li>
                     <li>
-                        <!-- <i>icon to go here</i> -->
-                        <h3>Community</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit animi omnis esse, sed fugit
-                            magnam
-                            labore, quae expedita tempora nemo veritatis fugiat eaque. Aliquam aspernatur distinctio suscipit
-                            voluptatem
-                            amet sit.</p>
+                        <div>
+                            <i class="fas fa-users"></i>
+                        </div>
+                        
+                        <div class="links-info">
+                            <h4>Community</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit animi omnis esse, sed fugit
+                                magnam
+                                labore, quae expedita tempora nemo veritatis fugiat eaque. Aliquam aspernatur distinctio suscipit
+                                voluptatem
+                                amet sit.</p>
+                        </div>
                     </li>
                     <li>
-                        <h3>Blog</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit animi omnis esse, sed fugit
-                            magnam
-                            labore, quae expedita tempora nemo veritatis fugiat eaque. Aliquam aspernatur distinctio suscipit
-                            voluptatem
-                            amet sit.</p>
+                        <div>
+                            <i class="fas fa-file"></i>
+                        </div>
+                        
+                        <div class="links-info">
+                            <h4>Blog</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit animi omnis esse, sed fugit
+                                magnam
+                                labore, quae expedita tempora nemo veritatis fugiat eaque. Aliquam aspernatur distinctio suscipit
+                                voluptatem
+                                amet sit.</p>
+                        </div>
                     </li>
                     <li>
-                        <h3>Get in touch</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit animi omnis esse, sed fugit
-                            magnam
-                            labore, quae expedita tempora nemo veritatis fugiat eaque. Aliquam aspernatur distinctio suscipit
-                            voluptatem
-                            amet sit.</p>
+                        <div>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        
+                        <div class="links-info">
+                            <h4>Get in touch</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit animi omnis esse, sed fugit
+                                magnam
+                                labore, quae expedita tempora nemo veritatis fugiat eaque. Aliquam aspernatur distinctio suscipit
+                                voluptatem
+                                amet sit.</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -109,11 +142,13 @@
                 <img src="styles/images/banner.jpg" alt="">
             </div>
             <div class="wrapper">
+                <div class="box-photo">
+                    <img src="styles/images/small-box.jpg" alt="">
+                </div>
+                
                 <div class="monthly-info">
                     <h3>This month profile</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque qui, minus unde aliquam,
-                        exercitationem et laboriosam iste aut sed natus possimus vel eos quia nesciunt obcaecati voluptate.
-                        Dolorem, quo ex.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque qui, minus unde aliquam,exercitationem et laboriosam iste aut sed natus possimus vel eos quia nesciunt obcaecati voluptate. Dolorem, quo ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam fuga dolorem exercitationem ex, veritatis tempore ad natus nam cupiditate, dolore nisi qui pariatur quae aut perspiciatis accusantium autem vero voluptatum.</p>
                     <a href="#" class="find-out-button">Found out more</a>
                 </div>
             </div>
