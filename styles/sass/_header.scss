@@ -31,7 +31,7 @@ nav a {
 
 h1 {
     width: 30%;
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 .header-image {
@@ -49,7 +49,6 @@ ul {
 
 .header-blog {
     @include header-image(url(images/blog-header.jpg));
-    
 }
 
 // CONTACT PAGE HEADER STARTS HERE
@@ -58,4 +57,40 @@ ul {
     @include header-image(url(images/contact-header.jpg));
 }
 
+
+
+// MOBILE
+
+// IPAD
+
+@media(max-width: 1024px) {
+    .header-image {
+        display: none;
+    }  
+
+}
+
+@media(max-width: 728px) {
+    h1 {
+        font-size: 12rem;
+        line-height: 10rem;
+        padding-top: 80px;
+    }
+}
+
+@media(max-width: 480px) {
+    h1 {
+        font-size: 8rem;
+        line-height: 7.5rem;
+    }
+}
+
+
+
+@media(max-width: 320px) {
+    
+}
+
+
+// MEDIA QUERIES
     

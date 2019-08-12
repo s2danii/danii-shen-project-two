@@ -4,8 +4,6 @@
 
 .blog-body {
     background: $primary-blue;
-    
-    
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -19,41 +17,41 @@
         height: 100%;
         margin-bottom: -40vh;
         .blog-image {
-            
-            position: relative;
+             position: relative;
             right: -30px;
-        }
-        .blog-text {
-            padding: 40px 0 5px 40px;
-            margin: 40px 100px 0 0;
-            background: $primary-blue;
-            position: relative;
-            p {
-                margin-top: 0;
-            }
-        }
-
-        .comments-section {
-            margin: 40px 100px 0 0;
-            padding: 40px 0 5px 40px;
-            .comment {
-                display: flex;
-                margin-top: 40px;
-                img {
-                    width: 100px;
-                    height: 100px;
-                    
-                }
-                div {
-                    padding-left: 30px;
-                    p {
-                        margin-top: 0;
-                    }
-                }
-            }
         }
         form {
             margin-right: 100px;
+        }
+    }
+
+    .blog-text {
+        padding: 40px 0 5px 40px;
+        margin: 40px 100px 0 0;
+        background: $primary-blue;
+        position: relative;
+        p {
+            margin-top: 0;
+        }
+    }
+
+    .comments-section {
+        margin: 40px 100px 0 0;
+        padding: 40px 0 5px 40px;
+        .comment {
+            display: flex;
+            margin-top: 40px;
+            img {
+                width: 100px;
+                height: 100px;
+                
+            }
+            div {
+                padding-left: 30px;
+                p {
+                    margin-top: 0;
+                }
+            }
         }
     }
 
