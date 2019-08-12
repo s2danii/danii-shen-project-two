@@ -4,12 +4,12 @@
 
 .blog-body {
     background: $primary-blue;
+    
+    
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     padding-top: 100px;
-    
-    
     article {
         width: 60%;
         position: relative;
@@ -55,7 +55,7 @@
         form {
             margin-right: 100px;
         }
-    
+    }
 
     .blog-image::before {
         content: '';
@@ -103,7 +103,7 @@
             }
         }
     }
-    }
+    
     
 }
 
