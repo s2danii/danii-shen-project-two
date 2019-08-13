@@ -15,19 +15,55 @@
     position: relative;
 }
 
-nav ul {
+.desktop-nav ul {
     display: flex;
     justify-content: flex-end;
+    li {
+    padding: 30px;
+        a {
+            line-height: 29px;
+        letter-spacing: 1px;
+        }
+    }
 }
 
-nav li {
-    padding: 30px;
+.hamburger-nav {
+    text-align: right;
+    padding-top: 50px;
+    i {
+        font-size: 56px;
+    }
+    
 }
- 
-nav a {
-    line-height: 29px;
-    letter-spacing: 1px;
+
+.mobile-menu {
+    margin-top: 15px;  
+    display: none; 
+    position: absolute;
+    right: 0;
+    z-index: 20;
+    ul {
+        padding: 40px;
+        background: rgba(12, 20, 35, 0.5);
+        li {
+            padding: 10px 0;
+        }
+        a {
+        font-size: 3.2rem;
+        padding: 10px 0;
+        }
+    }
+    
 }
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav:checked ~ .mobile-menu {
+    display: block;
+}
+
 
 h1 {
     width: 30%;
@@ -53,7 +89,7 @@ ul {
 
 // CONTACT PAGE HEADER STARTS HERE
 
-.contact-header {
+.header-contact {
     @include header-image(url(images/contact-header.jpg));
 }
 
@@ -77,12 +113,16 @@ ul {
         padding-top: 80px;
     }
 
-    nav {
+    .desktop-nav {
         display: none;
     }
 
     .header-blog {
         height: 50vh;
+    }
+
+    .header-contact {
+        height: 70vh;
     }
 }
 

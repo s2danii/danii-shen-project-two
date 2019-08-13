@@ -12,13 +12,25 @@
 <body>
     <header class="header-blog">
         <div class="wrapper">
-            <nav>
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
+            </nav>
+            <nav class="hamburger-nav">
+                <label for="mobile-nav" class="visibilityHidden"><i class="fas fa-hamburger"></i></label>
+                <input type="checkbox" id="mobile-nav" class="mobile-nav">
+                <div class="mobile-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>

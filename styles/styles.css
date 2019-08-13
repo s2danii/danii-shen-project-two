@@ -230,6 +230,7 @@ a {
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 2rem;
 }
 
 .wrapper {
@@ -307,7 +308,7 @@ button {
   position: relative;
 }
 
-nav ul {
+.desktop-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,13 +317,52 @@ nav ul {
           justify-content: flex-end;
 }
 
-nav li {
+.desktop-nav ul li {
   padding: 30px;
 }
 
-nav a {
+.desktop-nav ul li a {
   line-height: 29px;
   letter-spacing: 1px;
+}
+
+.hamburger-nav {
+  text-align: right;
+  padding-top: 50px;
+}
+
+.hamburger-nav i {
+  font-size: 56px;
+}
+
+.mobile-menu {
+  margin-top: 15px;
+  display: none;
+  position: absolute;
+  right: 0;
+  z-index: 20;
+}
+
+.mobile-menu ul {
+  padding: 40px;
+  background: rgba(12, 20, 35, 0.5);
+}
+
+.mobile-menu ul li {
+  padding: 10px 0;
+}
+
+.mobile-menu ul a {
+  font-size: 3.2rem;
+  padding: 10px 0;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav:checked ~ .mobile-menu {
+  display: block;
 }
 
 h1 {
@@ -348,7 +388,7 @@ ul {
   height: 100vh;
 }
 
-.contact-header {
+.header-contact {
   background: url(images/contact-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -367,11 +407,14 @@ ul {
     line-height: 10rem;
     padding-top: 80px;
   }
-  nav {
+  .desktop-nav {
     display: none;
   }
   .header-blog {
     height: 50vh;
+  }
+  .header-contact {
+    height: 70vh;
   }
 }
 
