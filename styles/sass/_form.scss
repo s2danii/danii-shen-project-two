@@ -57,6 +57,71 @@ form {
     }
 }
 
+.contact-message {
+        position: relative;
+        top: -35vh;
+        left: 60px;
+        z-index: 10;
+        form {
+            position: relative;
+        }
+    }
+
+.contact-message form::before {
+    content: '';
+        height: 100%;
+        width: 100%;
+        background: $accent;
+        position: absolute;
+        left: -40px;
+        bottom: -40px;
+        z-index: -1;
+}
+
+// MEDIA QUERIES START HERE
+
+@media(max-width: 1024px) {
+    .contact-message {
+        width: 100%;
+        left: 30px;
+        top: -45vh;
+        margin-bottom: -35vh;
+    }
+
+    .contact-info {
+        text-align: center;
+        padding-bottom: 30px;
+        .social-icons {
+            justify-content: center;
+        }
+    }
+
+}
+
+@media(max-width: 728px) {
+    .contact-message form::before {
+        position: static;
+    }
+
+    .contact-message {
+        left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-message {
+        form {
+            padding: 30px;
+            display: block;
+        }
+    }
+    .blog-form, .contact-message form {
+        input[type=email], input[type=text] {
+            width: 100%;
+            padding-top: 10px;
+        }
+    }
+}
 
 
 

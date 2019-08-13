@@ -92,8 +92,7 @@ aside {
             margin-left: 100px;
             background: $primary-green;
             padding: 30px;
-        }
-        ul {
+            ul {
             margin: 30px 0;
             li {
                 line-height: 32px;
@@ -102,6 +101,8 @@ aside {
             }
         }
     }
+    
+}
 
 .aside-info::after {
     content: '';
@@ -147,10 +148,13 @@ aside {
         }
         .comments-section {
             margin-right: 40px;
+            h4 {
+                margin-top: 10px;
+            }
         }
         .blog-form {
             margin: 0;
-            border-bottom: 2px solid $accent;
+            border-bottom: 1px solid $accent;
         }
         
     }
@@ -159,7 +163,7 @@ aside {
         left: -10px;
     }
 
-    aside {
+    .blog-body aside {
         width: 100%;
         position: static;
         display: flex;
@@ -190,12 +194,14 @@ aside {
         border: 10px solid $accent;
     }
 
-    
-
     .blog-body {
        .blog-form {
         margin-top: 20px;
-        } 
+        }
+        .blog-text {
+            margin-right: 0;
+            border-bottom: 1px solid $accent;
+        }
        .comments-section {
         margin: 0;
         padding: 0;
@@ -212,5 +218,30 @@ aside {
             }
         } 
     }
+    
+}
+
+@media(max-width: 320px) {
+    
+    
+
+    .blog-body {
+        .blog-text {
+        padding: 40px 20px 5px;
+        }
+        aside {
+        
+            .aside-image {
+            display: none;
+            }
+
+            .aside-info {
+                width: 100%;
+                margin-right: 20px;
+            }
+        }
+        
+    }
+    
     
 }

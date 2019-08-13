@@ -700,6 +700,66 @@ form button {
   margin-bottom: 0;
 }
 
+.contact-message {
+  position: relative;
+  top: -35vh;
+  left: 60px;
+  z-index: 10;
+}
+
+.contact-message form {
+  position: relative;
+}
+
+.contact-message form::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: #86e0f9;
+  position: absolute;
+  left: -40px;
+  bottom: -40px;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .contact-message {
+    width: 100%;
+    left: 30px;
+    top: -45vh;
+    margin-bottom: -35vh;
+  }
+  .contact-info {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .contact-info .social-icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 728px) {
+  .contact-message form::before {
+    position: static;
+  }
+  .contact-message {
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-message form {
+    padding: 30px;
+    display: block;
+  }
+  .blog-form input[type=email], .blog-form input[type=text], .contact-message form input[type=email], .contact-message form input[type=text] {
+    width: 100%;
+    padding-top: 10px;
+  }
+}
+
 .blog-body {
   background: #0c1423;
   display: -webkit-box;
@@ -805,11 +865,11 @@ aside .aside-info {
   padding: 30px;
 }
 
-aside ul {
+aside .aside-info ul {
   margin: 30px 0;
 }
 
-aside ul li {
+aside .aside-info ul li {
   line-height: 32px;
   list-style-type: disc;
   padding-left: 10px;
@@ -857,25 +917,28 @@ aside ul li {
   .blog-body .comments-section {
     margin-right: 40px;
   }
+  .blog-body .comments-section h4 {
+    margin-top: 10px;
+  }
   .blog-body .blog-form {
     margin: 0;
-    border-bottom: 2px solid #86e0f9;
+    border-bottom: 1px solid #86e0f9;
   }
   .blog-image::before {
     left: -10px;
   }
-  aside {
+  .blog-body aside {
     width: 100%;
     position: static;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  aside .aside-image {
+  .blog-body aside .aside-image {
     width: 40%;
     margin-left: 5%;
   }
-  aside .aside-info {
+  .blog-body aside .aside-info {
     width: 60%;
     margin: 0 5% 40px 20px;
   }
@@ -894,6 +957,10 @@ aside ul li {
   .blog-body .blog-form {
     margin-top: 20px;
   }
+  .blog-body .blog-text {
+    margin-right: 0;
+    border-bottom: 1px solid #86e0f9;
+  }
   .blog-body .comments-section {
     margin: 0;
     padding: 0;
@@ -908,6 +975,19 @@ aside ul li {
   }
   .blog-body .comments-section p {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .blog-body .blog-text {
+    padding: 40px 20px 5px;
+  }
+  .blog-body aside .aside-image {
+    display: none;
+  }
+  .blog-body aside .aside-info {
+    width: 100%;
+    margin-right: 20px;
   }
 }
 
@@ -941,28 +1021,6 @@ aside ul li {
   margin: 0;
 }
 
-.contact-message {
-  position: relative;
-  top: -35vh;
-  left: 60px;
-  z-index: 10;
-}
-
-.contact-message form {
-  position: relative;
-}
-
-.contact-message form::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: #86e0f9;
-  position: absolute;
-  left: -40px;
-  bottom: -40px;
-  z-index: -1;
-}
-
 .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -971,6 +1029,19 @@ aside ul li {
 
 .social-icons i {
   margin-right: 20px;
+}
+
+@media (max-width: 1024px) {
+  .contact-main .wrapper {
+    display: block;
+  }
+  .contact-info {
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 auto;
+  }
 }
 
 footer {

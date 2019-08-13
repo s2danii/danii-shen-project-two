@@ -13,33 +13,12 @@
     width: 30%;
     align-self: center;
     margin-right: 20px;
-        h4 {
-            margin-bottom: 20px;
-        }
-        p {
-            margin: 0;
-        }
+    h4 {
+        margin-bottom: 20px;
     }
-
-.contact-message {
-        position: relative;
-        top: -35vh;
-        left: 60px;
-        z-index: 10;
-        form {
-            position: relative;
-        }
+    p {
+        margin: 0;
     }
-
-.contact-message form::before {
-    content: '';
-        height: 100%;
-        width: 100%;
-        background: $accent;
-        position: absolute;
-        left: -40px;
-        bottom: -40px;
-        z-index: -1;
 }
 
 .social-icons {
@@ -49,3 +28,20 @@
     }
 }
 
+// MEDIA QUERY STARTS HERE
+
+@media(max-width: 1024px) {
+    .contact-main {
+        .wrapper {
+            display: block;
+        }
+    }
+
+.contact-info {
+    width: 100%;
+    align-self: center;
+    margin: 0 auto;
+    }
+
+
+}
