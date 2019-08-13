@@ -30,6 +30,7 @@
 .hamburger-nav {
     text-align: right;
     padding-top: 50px;
+    display: none;
     i {
         font-size: 56px;
     }
@@ -123,6 +124,10 @@ ul {
 
     .header-contact {
         height: 70vh;
+    }
+
+    .hamburger-nav {
+        display: block;
     }
 }
 
