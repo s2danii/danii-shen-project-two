@@ -20,20 +20,18 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 13.8rem;
-    line-height: 126px;
+    line-height: 12.6rem;
     margin: 0;
-    // font-size: calc(138px + (138 - 100) * ((100vw - 320px) / (1600 - 320)));
 }
 
 h2 {
     font-size: 8rem;
-    line-height: 92px;
+    line-height: 9.2rem;
     margin-bottom: 20px;
 }
 
 h3 {
     font-size: 4.2rem;
-    
     letter-spacing: 1px;
 }
 
@@ -76,7 +74,7 @@ p {
 
 // MEDIA QUERIES
 
-@media(max-width: 800px)  {
+@media(max-width: 900px)  {
     p {
      line-height: 25px;
     }
@@ -86,6 +84,23 @@ p {
     .wrapper {
         width: 90%;
     }
+}
+
+@media(max-width: 480px) {
+    h2 {
+    font-size: 6rem;
+    line-height: 7rem;
+    }
+
+    h3 {
+        font-size: 3.2rem;
+    }
+
+    h4 {
+        font-size: 2.6rem;
+        line-height: 2.6rem;
+    }
+
 }
 
 

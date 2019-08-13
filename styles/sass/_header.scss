@@ -59,9 +59,7 @@ ul {
 
 
 
-// MOBILE
-
-// IPAD
+// MEDIA QUERIES STARTS HERE
 
 @media(max-width: 1024px) {
     .header-image {
@@ -70,11 +68,21 @@ ul {
 
 }
 
+// MOBILE STARTS HERE
+
 @media(max-width: 728px) {
     h1 {
         font-size: 12rem;
         line-height: 10rem;
         padding-top: 80px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .header-blog {
+        height: 50vh;
     }
 }
 
@@ -92,5 +100,5 @@ ul {
 }
 
 
-// MEDIA QUERIES
+
     

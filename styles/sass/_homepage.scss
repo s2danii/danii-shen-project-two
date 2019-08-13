@@ -71,22 +71,27 @@
         display: flex;
         width: 50%;
         margin: 30px 0;
-            i {
-                border-radius: 50%;
-                background: $accent;
-                color: $primary-blue;
-                padding: 15px;
-                font-size: 3.2rem;
-                height: 65px;
-                width: 65px;
-                text-align: center;
-                margin: 0 30px;
-        
-            }
+            
             
         }
     }
 }
+
+.links-icon {
+    i {
+        border-radius: 50%;
+        background: $accent;
+        color: $primary-blue;
+        padding: 15px;
+        font-size: 3.2rem;
+        height: 65px;
+        width: 65px;
+        text-align: center;
+        margin: 0 30px;
+
+    }
+}
+
 
 // MONTHLY PROFILE
 
@@ -107,9 +112,6 @@
     width: 25%;
     height: 25%;
     box-shadow: $drop-shadow-right;
-    img {
-        display: block; 
-    }
 }
 
 .gallery {
@@ -167,6 +169,8 @@
    }
 }
 
+// MOBILE STARTS HERE
+
 @media(max-width: 728px) {
     // FEATURES SECTION STARTS HERE
 
@@ -209,7 +213,6 @@
         margin: 10% 0;
             i {
                 margin-left: 0;
-        
             }
             
         }
@@ -218,18 +221,20 @@
 
 // MONTHLY PROFILE STARTS HERE
 
+    
     .monthly-profile {
-        
         .wrapper {
-            padding-top: 80px;
-            display: flex;
-            
+        padding-top: 80px;
+        display: flex;
+        
             .monthly-info {
                 width: 75%;
                 padding-left: 80px;
             }
-        }
+        }    
     }
+    
+    
 
 // GALLERY STARTS HERE
 
@@ -249,7 +254,26 @@
 
 
 @media(max-width: 480px) {
+// MONTHLY PROFILE
 
+.monthly-profile {
+    
+    .wrapper {
+        padding: 120px 0 90px 0;
+        display: block;
+        
+        .monthly-info {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+        }
+    }
+}
+
+.box-photo {
+    display: none;
+    
+}    
 
 }
 
@@ -257,6 +281,21 @@
 
 @media(max-width: 320px) {
     .feature-top, .feature-bottom {
-        display: block;
+        display: block; 
+    }
+
+    .links-icon i {
+        width: 55px;
+        height: 55px;
+        font-size: 2.2rem;
+        margin-right: 15px;
+    }
+
+    .gallery {
+        ul {
+            li:nth-child(2) {
+                margin: 0 0 0 15px;
+            }
+        }
     }
 }

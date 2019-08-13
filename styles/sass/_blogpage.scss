@@ -26,8 +26,8 @@
     }
 
     .blog-text {
-        padding: 40px 0 5px 40px;
-        margin: 40px 100px 0 0;
+        padding: 40px 90px 5px 40px;
+        margin: 40px 10px 0 0;
         background: $primary-blue;
         position: relative;
         p {
@@ -38,50 +38,51 @@
     .comments-section {
         margin: 40px 100px 0 0;
         padding: 40px 0 5px 40px;
-        .comment {
-            display: flex;
-            margin-top: 40px;
-            img {
-                width: 100px;
-                height: 100px;
-                
-            }
-            div {
-                padding-left: 30px;
-                p {
-                    margin-top: 0;
-                }
-            }
+        
+    }
+}
+
+.comment {
+    display: flex;
+    margin-top: 40px;
+    img {
+        width: 100px;
+        height: 100px;
+        
+    }
+    div {
+        padding-left: 30px;
+        p {
+            margin-top: 0;
         }
     }
+}
 
-    .blog-image::before {
-        content: '';
-        height: 100%;
-        width: 100%;
-        background: $accent;
-        position: absolute;
-        left: -40px;
-        bottom: -40px;
-        z-index: -1;
-    }
+.blog-image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: $accent;
+    position: absolute;
+    left: -40px;
+    bottom: -40px;
+    z-index: -1;
+}
 
-    .blog-text::before {
-        content: '';
-        height: 120%;
-        width: 100%;        
-        background: $accent;
-        position: absolute;
-        left: -10px;
-        bottom: -10px;
-        z-index: -10;
-    }
-
-    
+.blog-text::before {
+    content: '';
+    height: 120%;
+    width: 100%;        
+    background: $accent;
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    z-index: -10;
+} 
 
 // ASIDE STARTS HERE
-    
-    aside {
+
+aside {
     width: 30%;
     position: relative;
     z-index: 10;
@@ -101,9 +102,6 @@
             }
         }
     }
-    
-    
-}
 
 .aside-info::after {
     content: '';
@@ -117,3 +115,102 @@
 
 }
 
+@media(max-width: 1024px) {
+    
+    aside {
+        .aside-info {
+        padding: 15px;
+        margin-left: 80px;
+        }
+        ul {
+            margin-left: 15px;
+            li {
+                line-height: 2rem;
+            }
+        } 
+    }
+}
+
+@media(max-width: 728px) {
+    .blog-body {
+        display: block;
+        .blog-post {
+            width: 90%;
+            margin: 0 auto -35vh;
+            top: -40vh;
+            .blog-image {
+                right: 0;
+            }
+        }
+        .blog-text {
+            padding-right: 40px;
+        }
+        .comments-section {
+            margin-right: 40px;
+        }
+        .blog-form {
+            margin: 0;
+            border-bottom: 2px solid $accent;
+        }
+        
+    }
+
+    .blog-image::before {
+        left: -10px;
+    }
+
+    aside {
+        width: 100%;
+        position: static;
+        display: flex;
+        
+            .aside-image {
+                width: 40%;
+                margin-left: 5%;
+            }   
+            .aside-info {
+                width: 60%;
+                margin: 0 5% 40px 20px;
+            }
+            
+        }
+
+    .aside-info::after {
+        position: static;
+    }
+
+}
+
+@media(max-width: 480px) {
+    .blog-image::before, .blog-text::before {
+        position: static;
+    }
+
+    .blog-image {
+        border: 10px solid $accent;
+    }
+
+    
+
+    .blog-body {
+       .blog-form {
+        margin-top: 20px;
+        } 
+       .comments-section {
+        margin: 0;
+        padding: 0;
+            img {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+            div {
+                padding-left: 20px;
+            }
+            p {
+                margin-bottom: 20px;
+            }
+        } 
+    }
+    
+}
