@@ -9,6 +9,26 @@
     height: 100vh;
 }
 
+.skip-main {
+    left: -999px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+.skip-main:focus, .skip-main:active {
+    left: 0;
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    background: $primary-blue;
+    color: $text-color;
+    text-align: center;
+    z-index: 999;
+}
 
 .header-home {
     @include header-image((linear-gradient(rgba(12, 20, 35, 0.7), rgba(12, 20, 35, 0.7)), url(images/header-image.jpg)));
@@ -21,7 +41,7 @@
     li {
     padding: 30px;
         a {
-            line-height: 29px;
+        line-height: 29px;
         letter-spacing: 1px;
         }
     }
@@ -33,9 +53,11 @@
     display: none;
     i {
         font-size: 56px;
+        
     }
     
 }
+
 
 .mobile-menu {
     margin-top: 15px;  
@@ -128,7 +150,7 @@ ul {
 
     .hamburger-nav {
         display: block;
-        position: sticky;
+        
     }
 }
 
