@@ -63,7 +63,7 @@
     z-index: 20;
     
     ul {
-        padding: 40px;
+        padding: 50px;
         background: rgba(12, 20, 35, 0.8);
         
         li {
@@ -118,6 +118,7 @@ ul {
 
 .header-contact {
     @include header-image(url(images/contact-header.jpg));
+    height: 80vh;
 }
 
 

@@ -247,12 +247,12 @@ img {
 p {
   margin: 30px 0;
   font-family: 'Lato', sans-serif;
-  line-height: 32px;
+  line-height: 3.2rem;
 }
 
 @media (max-width: 900px) {
   p {
-    line-height: 25px;
+    line-height: 2.5rem;
   }
 }
 
@@ -329,15 +329,6 @@ button:focus,
   z-index: 999;
 }
 
-.header-home {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 20, 35, 0.7)), to(rgba(12, 20, 35, 0.7))), url(images/header-image.jpg);
-  background: linear-gradient(rgba(12, 20, 35, 0.7), rgba(12, 20, 35, 0.7)), url(images/header-image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-}
-
 .desktop-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,7 +366,7 @@ button:focus,
 }
 
 .mobile-menu ul {
-  padding: 40px;
+  padding: 50px;
   background: rgba(12, 20, 35, 0.8);
 }
 
@@ -394,6 +385,15 @@ button:focus,
 
 .mobile-nav:checked ~ .mobile-menu {
   display: block;
+}
+
+.header-home {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 20, 35, 0.7)), to(rgba(12, 20, 35, 0.7))), url(images/header-image.jpg);
+  background: linear-gradient(rgba(12, 20, 35, 0.7), rgba(12, 20, 35, 0.7)), url(images/header-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 
 h1 {
@@ -424,6 +424,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  height: 80vh;
 }
 
 @media (max-width: 1024px) {
@@ -779,7 +780,7 @@ form button {
 
 .contact-message {
   position: relative;
-  top: -35vh;
+  top: -50vh;
   left: 60px;
   z-index: 10;
 }
@@ -803,7 +804,6 @@ form button {
   .contact-message {
     width: 100%;
     left: 30px;
-    top: -45vh;
     margin-bottom: -35vh;
   }
   .contact-info {
@@ -936,17 +936,17 @@ aside {
   height: 100%;
 }
 
-aside .aside-info {
+.aside-info {
   margin-left: 100px;
   background: #0f614e;
   padding: 30px;
 }
 
-aside .aside-info ul {
+.aside-info ul {
   margin: 30px;
 }
 
-aside .aside-info ul li {
+.aside-info ul li {
   line-height: 32px;
   list-style-type: disc;
   padding-left: 10px;
