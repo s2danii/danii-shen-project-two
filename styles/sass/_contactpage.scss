@@ -1,11 +1,11 @@
+// ALL STYLING FOR CONTACT PAGE
 
 .contact-main {
-    
     background: $primary-blue;
+    
     .wrapper {
         display: flex;
         flex-direction: row-reverse;
-        
     }
 }
 
@@ -13,9 +13,11 @@
     width: 30%;
     align-self: center;
     margin-right: 20px;
+    
     h4 {
         margin-bottom: 20px;
     }
+    
     p {
         margin: 0;
     }
@@ -23,15 +25,18 @@
 
 .social-icons {
     display: flex;
+    
     i {
         margin-right: 20px;
     }
 }
 
-// MEDIA QUERY STARTS HERE
+// MEDIA QUERIES STARTS HERE
 
 @media(max-width: 1024px) {
+    
     .contact-main {
+        
         .wrapper {
             display: block;
         }
@@ -42,6 +47,4 @@
     align-self: center;
     margin: 0 auto;
     }
-
-
 }

@@ -1,4 +1,8 @@
 
+// ALL STYING FOR FORMS
+
+// GENERAL FORM STYLING STARTS HERE
+
 @mixin form-styling($form-color) {
     width: calc(50% - 20px);
     border: none;
@@ -8,11 +12,11 @@
     color: $text-color;
 }
 
-
 form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
     textarea {
         width: 100%;
         height: 200px;
@@ -21,35 +25,42 @@ form {
         padding: 20px;
         color: $text-color;
     }
+    
     button {
-       margin: 40px 0;
+        margin: 40px 0;
     }
 }
+
+// FORM STYLING FOR BLOG PAGE STARTS HERE
 
 .blog-form {
     background: $primary-blue;
     input[type=email], input[type=text] {
     @include form-styling($primary-blue);
     }
+    
     textarea {
         background: $primary-blue;
     }
 }
-    
 
-// CONTACTS PAGE FORM
+// FORM STYING FOR CONTACT PAGE STARTS HERE
 
 .contact-message {
     width: 70%;
+    
     form {
         background: $primary-green;
         padding: 60px;
+        
         input[type=email], input[type=text] {
             @include form-styling($primary-green);
         }
+        
         textarea {
             background: $primary-green;
         }
+        
         button {
             background: $primary-blue;
             margin-bottom: 0;
@@ -58,24 +69,25 @@ form {
 }
 
 .contact-message {
+    position: relative;
+    top: -35vh;
+    left: 60px;
+    z-index: 10;
+    
+    form {
         position: relative;
-        top: -35vh;
-        left: 60px;
-        z-index: 10;
-        form {
-            position: relative;
-        }
     }
+}
 
 .contact-message form::before {
     content: '';
-        height: 100%;
-        width: 100%;
-        background: $accent;
-        position: absolute;
-        left: -40px;
-        bottom: -40px;
-        z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: $accent;
+    position: absolute;
+    left: -40px;
+    bottom: -40px;
+    z-index: -1;
 }
 
 // MEDIA QUERIES START HERE
@@ -91,6 +103,7 @@ form {
     .contact-info {
         text-align: center;
         padding-bottom: 30px;
+        
         .social-icons {
             justify-content: center;
         }
@@ -105,12 +118,12 @@ form {
 
     .contact-message {
         left: 0;
-        
     }
 }
 
 @media (max-width: 480px) {
     .contact-message {
+        
         form {
             padding: 30px;
             display: block;

@@ -64,15 +64,15 @@
 .links-section {
     background: $primary-blue;
     padding: 150px 0 50px 0;
+    
     ul {
     display: flex;
     flex-wrap: wrap;
-        li {
+        
+    li {
         display: flex;
         width: 50%;
         margin: 30px 0;
-            
-            
         }
     }
 }
@@ -88,15 +88,15 @@
         width: 65px;
         text-align: center;
         margin: 0 30px;
-
     }
 }
 
 
-// MONTHLY PROFILE
+// MONTHLY PROFILE STARTS HERE
 
 .monthly-profile {
     background: $primary-blue;
+    
     .wrapper {
         padding: 120px 0 90px 0;
         display: flex;
@@ -117,16 +117,17 @@
 .gallery {
     background: $primary-green;
     padding: 90px 0;
+    
     ul {
         display: flex;
+        
         li:nth-child(2) {
             margin: 0 40px;
         }
     }
 }
 
-// MEDIA QUERIES
-
+// MEDIA QUERIES START HERE
 
 @media(max-width: 1024px) {
     .more-info {
@@ -136,7 +137,7 @@
     // FEATURES SECTION STARTS HERE
     
     .photo-wrapper,.info-left, .info-right {
-    width: 45%;
+        width: 45%;
     }
 
     .info-left {
@@ -152,30 +153,30 @@
 @media(max-width: 800px)  {
 
     // FEATURES SECTION STARTS HERE
-   .info-right {
+
+    .info-right {
         padding: 5% 5% 0 0;
-   }
+    }
 
-   .info-left {
-       padding-left: 5%;
-   }
+    .info-left {
+        padding-left: 5%;
+    }
 
-   .feature-bottom {
-       padding-bottom: 20px;
-   }
+    .feature-bottom {
+        padding-bottom: 20px;
+    }
 
-   .photo-right {
-       bottom: -50px;
-   }
+    .photo-right {
+        bottom: -50px;
+    }
 }
-
-// MOBILE STARTS HERE
 
 @media(max-width: 728px) {
     // FEATURES SECTION STARTS HERE
 
     .feature-top, .feature-bottom {
         display: block;
+        
         h4 {
             border-bottom: 2px solid $accent;
         }
@@ -211,6 +212,7 @@
         display: flex;
         width: 100%;
         margin: 10% 0;
+            
             i {
                 margin-left: 0;
             }
@@ -233,16 +235,17 @@
             }
         }    
     }
-    
-    
+
 
 // GALLERY STARTS HERE
 
     .gallery {
         ul {
+            
             li:nth-child(2) {
                 margin: 0 0 0 40px;
             }
+            
             li:nth-child(3) {
                 display: none;
             }
@@ -254,27 +257,26 @@
 
 
 @media(max-width: 480px) {
-// MONTHLY PROFILE
+// MONTHLY PROFILE STARTS HERE
 
-.monthly-profile {
-    
-    .wrapper {
-        padding: 120px 0 90px 0;
-        display: block;
+    .monthly-profile {
         
-        .monthly-info {
-            width: 100%;
-            text-align: center;
-            padding: 0;
+        .wrapper {
+            padding: 120px 0 90px 0;
+            display: block;
+            
+            .monthly-info {
+                width: 100%;
+                text-align: center;
+                padding: 0;
+            }
         }
     }
-}
 
-.box-photo {
-    display: none;
-    
-}    
-
+    .box-photo {
+        display: none;
+        
+    }    
 }
 
 

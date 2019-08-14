@@ -1,4 +1,6 @@
-// BUTTON STYLING
+// ALL BUTTON STYLING
+
+// BUTTONS FOR LINKS ON HOMEPAGE
 
 .find-out-button {
     background: $accent;
@@ -8,19 +10,20 @@
 }
 
 .read-more-button {
-   background: $primary-blue;
-   padding: 10px 30px;
-   line-height: 32px;
+    background: $primary-blue;
+    padding: 10px 30px;
+    line-height: 32px;
 }
 
+// BUTTONS FOR FORMS ON CONTACT PAGE AND BLOG PAGE
 button {
-        width: 100%;
-        color: $text-color;
-        background: $primary-green;
-        border: none;
-        padding: 10px 30px;
-        text-transform: uppercase;
-        font-weight: 700;
+    width: 100%;
+    color: $text-color;
+    background: $primary-green;
+    border: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 button:focus, 

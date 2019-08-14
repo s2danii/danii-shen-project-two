@@ -1,8 +1,7 @@
-// partial to set typography and general text styling
+// ALL GENERAL STYLING APPLICABLE FOR ALL PAGES
 
 html {
     font-size: 62.5%;
-   
 }
 
 body {
@@ -73,11 +72,11 @@ p {
     line-height: 32px;
 }
 
-// MEDIA QUERIES
+// MEDIA QUERIES START HERE
 
 @media(max-width: 900px)  {
     p {
-     line-height: 25px;
+    line-height: 25px;
     }
 }
 
@@ -101,7 +100,6 @@ p {
         font-size: 2.6rem;
         line-height: 2.6rem;
     }
-
 }
 
 

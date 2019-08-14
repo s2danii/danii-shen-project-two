@@ -1,6 +1,5 @@
-// partial for header styling
+// GENERAL HEADER STYLING FOR ALL PAGES
 
-// HOME PAGE STARTS HERE
 
 @mixin header-image($header-image) {
     background: $header-image;
@@ -30,16 +29,13 @@
     z-index: 999;
 }
 
-.header-home {
-    @include header-image((linear-gradient(rgba(12, 20, 35, 0.7), rgba(12, 20, 35, 0.7)), url(images/header-image.jpg)));
-    position: relative;
-}
-
 .desktop-nav ul {
     display: flex;
     justify-content: flex-end;
+    
     li {
     padding: 30px;
+        
         a {
         line-height: 29px;
         letter-spacing: 1px;
@@ -51,6 +47,7 @@
     text-align: right;
     padding-top: 50px;
     display: none;
+    
     i {
         font-size: 56px;
         
@@ -58,25 +55,26 @@
     
 }
 
-
 .mobile-menu {
     margin-top: 15px;  
     display: none; 
     position: absolute;
     right: 0;
     z-index: 20;
+    
     ul {
         padding: 40px;
         background: rgba(12, 20, 35, 0.8);
+        
         li {
             padding: 10px 0;
         }
+        
         a {
         font-size: 3.2rem;
         padding: 10px 0;
         }
     }
-    
 }
 
 .mobile-nav {
@@ -87,6 +85,12 @@
     display: block;
 }
 
+// HEADER STYLING FOR HOME PAGE STARTS HERE
+
+.header-home {
+    @include header-image((linear-gradient(rgba(12, 20, 35, 0.7), rgba(12, 20, 35, 0.7)), url(images/header-image.jpg)));
+    position: relative;
+}
 
 h1 {
     width: 30%;
@@ -104,13 +108,13 @@ ul {
     margin-top: 0;
 }
 
-// BLOG HEADER STARTS HERE
+// HEADER STYLING FOR BLOG PAGE STARTS HERE
 
 .header-blog {
     @include header-image(url(images/blog-header.jpg));
 }
 
-// CONTACT PAGE HEADER STARTS HERE
+// HEADER STYLING FOR CONTACT PAGE STARTS HERE
 
 .header-contact {
     @include header-image(url(images/contact-header.jpg));
